@@ -15,6 +15,7 @@ This project was directly inspired by the brilliant and fun
 project for the [Rust](https://www.rust-lang.org/) language.
 Indirect inspiration comes from [Ruby Koans](http://rubykoans.com/)
 and the Little LISPer/Little Schemer series of books.
+Ziglings was initiated by [Dave Gauer](https://ratfactor.com/).
 
 ## Intended Audience
 
@@ -69,7 +70,7 @@ reading these.
 ## A Note About Versions
 
 **Hint:** To check out Ziglings for a stable release of Zig, you can use
-the appropriate tag. 
+the appropriate tag.
 
 The Zig language is under very active development. In order to be
 current, Ziglings tracks **development** builds of the Zig
@@ -88,7 +89,11 @@ that if you update one, you may need to also update the other.
 
 ### Version Changes
 
-Version-0.14.0-dev.42
+Version-0.14.0-dev.1573
+* *2024-09-16* zig 0.14.0-dev.1573 - introduction of labeled switch, see [#21257](https://github.com/ziglang/zig/pull/21257)
+* *2024-09-02* zig 0.14.0-dev.1409 - several changes in std.builtin, see [#21225](https://github.com/ziglang/zig/pull/21225)
+* *2024-08-04* zig 0.14.0-dev.1224 - several changes in build system, see [#21115](https://github.com/ziglang/zig/pull/21115)
+* *2024-08-04* zig 0.14.0-dev.839 - several changes in build system, see [#20580](https://github.com/ziglang/zig/pull/20580), [#20600](https://github.com/ziglang/zig/issues/20600)
 * *2024-06-17* zig 0.14.0-dev.42 - changes in `std.mem.split and tokenize` - see [#15579](https://github.com/ziglang/zig/pull/15579)
 * *2024-05-29* zig 0.13.0-dev.339 - rework std.Progress - see [#20059](https://github.com/ziglang/zig/pull/20059)
 * *2024-03-21* zig 0.12.0-dev.3518 - change to @fieldParentPtr - see [#19470](https://github.com/ziglang/zig/pull/19470)
@@ -125,6 +130,12 @@ It can be handy to check just a single exercise:
 
 ```
 zig build -Dn=19
+```
+
+Or run all exercises, starting from a specific one:
+
+```
+zig build -Ds=27
 ```
 
 Or let Ziglings pick an exercise for you:
@@ -220,6 +231,8 @@ Zig Core Language
 * [X] Bit manipulation
 * [X] Working with C
 * [X] Threading
+* [x] Labeled switch
+* [x] Vector operations (SIMD)
 
 Zig Standard Library
 
